@@ -1,0 +1,18 @@
+node
+{
+  stage('Checkour SCM'){
+  git branch: 'testAngular', url: 'https://github.com/GayathriSubb/AngularProject1.git'
+  }
+  stage('Install node modules')
+  {
+  sh "npm install"
+  }
+  stage('Build')
+  {
+  sh "npm run build: ssr"
+  }
+  stage('Deploy')
+  {
+  sh "pm2 restart all"
+  }
+}
