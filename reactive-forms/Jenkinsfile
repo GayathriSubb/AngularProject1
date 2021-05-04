@@ -1,6 +1,6 @@
 node
 {
-  stage('Checkour SCM'){
+  stage('Checkout SCM'){
   git branch: 'testAngular', url: 'https://github.com/GayathriSubb/AngularProject1.git' 
   }
   stage('Install node modules') 
