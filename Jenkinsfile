@@ -7,7 +7,7 @@ nodejs "nodejs"
   stages {
     
     stage('Checkout SCM'){
-  git branch: 'testAngular', url: 'https://github.com/GayathriSubb/AngularProject1.git' 
+  git branch: 'main', url: 'https://github.com/GayathriSubb/AngularProject1.git' 
   }
     stage('Install') {
       steps { sh 'npm install' }
