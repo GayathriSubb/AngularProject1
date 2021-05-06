@@ -1,6 +1,10 @@
 node
 {
-  agent any {
+  agent any
+  tools {
+	nodejs "nodejs"
+	}
+  stages {
     
     stage('Checkout SCM'){
   git branch: 'testAngular', url: 'https://github.com/GayathriSubb/AngularProject1.git' 
