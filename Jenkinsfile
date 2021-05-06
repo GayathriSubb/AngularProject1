@@ -5,7 +5,9 @@ tools{
 nodejs "nodejs"
 }
   stages {
-    
+    stage('Clean'){
+    sh 'npm clean'
+    }
     stage('Install') {
       steps { sh 'npm install' }
     }
