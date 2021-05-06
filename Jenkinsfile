@@ -14,13 +14,13 @@ node
             steps { sh 'npm run-script lint' }
         }
         stage('Unit tests') {
-            steps { sh 'npm run-script test' }
+            steps { sh 'npm test' }
         }
       }
     }
 
     stage('Build') {
-      steps { sh 'npm run-script build' }
+      steps { sh 'npm build' }
     }
   }
 }
