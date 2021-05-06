@@ -1,6 +1,6 @@
 node
 {
-  stages {
+  agent any {
     stage('Checkout SCM'){
   git branch: 'testAngular', url: 'https://github.com/GayathriSubb/AngularProject1.git' 
   }
