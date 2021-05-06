@@ -1,6 +1,10 @@
 node
 {
   agent any {
+    stage('clone repo')
+    {
+      sh 'git clone https://github.com/GayathriSubb/AngularProject1.git'
+    }
     stage('Checkout SCM'){
   git branch: 'testAngular', url: 'https://github.com/GayathriSubb/AngularProject1.git' 
   }
