@@ -5,7 +5,7 @@ tools{
 nodejs "nodejs"
 }
   stages {
-    stage('Clean'){
+    stage('Clean'){ 
 steps
       {sh 'npm clean'}
     }
