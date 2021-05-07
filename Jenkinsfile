@@ -6,7 +6,8 @@ nodejs "nodejs"
 }
   stages {
     stage('Clean'){
-    sh 'npm clean'
+steps
+      {sh 'npm clean'}
     }
     stage('Install') {
       steps { sh 'npm install' }
