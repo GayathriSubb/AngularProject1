@@ -13,7 +13,7 @@ steps
       steps { sh 'npm run-script install' }
     }
 
-    stage('Test') {
+    stage('Test') { 
       parallel {
         stage('Static code analysis') {
             steps { sh 'npm run-script lint' }
