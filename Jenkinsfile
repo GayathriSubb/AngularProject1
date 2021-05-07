@@ -7,10 +7,10 @@ nodejs "nodejs"
   stages {
     stage('Clean'){ 
 steps
-      {sh 'npm clean'}
+      {sh 'npm run-script clean'}
     }
     stage('Install') {
-      steps { sh 'npm install' }
+      steps { sh 'npm run-script install' }
     }
 
     stage('Test') {
@@ -19,13 +19,13 @@ steps
             steps { sh 'npm run-script lint' }
         }
         stage('Unit tests') {
-            steps { sh 'npm test' }
+            steps { sh 'npm run-script test' }
         }
       }
     }
 
     stage('Build') {
-      steps { sh 'npm build' }
+      steps { sh 'npm run-script build' }
     }
   }
 }
