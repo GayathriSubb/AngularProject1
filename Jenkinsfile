@@ -5,12 +5,12 @@ tools{
 nodejs "nodejs"
 }
   stages {
-    stage('Checkout SCM'){ 
-steps
-      {
-        git branch: 'testAngular', credentialsId: '43afff5e-4eee-4bc1-a348-7dbabb598ae3', url: 'https://github.com/GayathriSubb/AngularProject1.git'
-      }
-    }
+    //stage('Checkout SCM'){ 
+//steps
+      //{
+        //git branch: 'testAngular', credentialsId: '43afff5e-4eee-4bc1-a348-7dbabb598ae3', url: 'https://github.com/GayathriSubb/AngularProject1.git'
+      //}
+   // }
     stage('Install') {
       steps { sh 'npm install' }
     }
