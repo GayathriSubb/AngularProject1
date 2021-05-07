@@ -10,7 +10,7 @@ steps
       {sh 'npm run-script clean'}
     }
     stage('Install') {
-      steps { sh 'npm run-script install' }
+      steps { sh 'npm install' }
     }
 
     stage('Test') { 
