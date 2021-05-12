@@ -12,7 +12,7 @@ nodejs "nodejs"
       //}
    // }
     stage('Install') {
-      steps { sh 'npm install' }
+      steps { sh 'ng install' }
     }
 
     stage('Test') { 
@@ -27,7 +27,7 @@ nodejs "nodejs"
     }
 
     stage('Build') {
-      steps { sh 'npm run build' }
+      steps { sh 'ng build' }
     }
   }
 }
